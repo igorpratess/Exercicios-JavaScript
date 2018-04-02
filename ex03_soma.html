@@ -1,0 +1,39 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <!-- Ajusta a acentuação -->
+        <meta charset="utf8" /> 
+        <title>Página-modelo HTML</title> 
+
+        <script type="text/javascript">
+
+        /*
+            Escreva um programa que leia números informados
+            pelo usúario até que ele informe 0 (zero).
+            Exiba a soma dos valores informados.
+        */
+            
+        var num, soma = 0; // Somente soma valerá 0
+
+            num = parseFloat(prompt('Digite um número a ser somado (0 para encerrar): ')); 
+
+            while(num != 0){
+
+                if(! isNaN(num)) { 
+                    soma += num;
+                } 
+
+                num = parseFloat(prompt('Digite um número a ser somado (0 para encerrar): '));                 
+            }
+
+            document.write('O resultado da soma dos números é: ' + soma);
+
+        </script>
+
+    </head>
+
+    <body>
+    <h1></h1>
+    <p></p> 
+    </body>
+</html>

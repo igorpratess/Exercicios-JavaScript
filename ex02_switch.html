@@ -1,0 +1,63 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <!-- Ajusta a acentuação -->
+        <meta charset="utf8" /> 
+        <title>Página-modelo HTML</title> 
+
+        <script type="text/javascript">
+
+        /*
+            Escreva um programa que obtenha um ano do usuário e
+            informe se um ano PODE ser bissexto ou não.
+                - Dê uma mensagem de erro com alert() caso a entrada
+                    informada não seja um número.
+                - Use document.write para informar se o ano indicado 
+                    pode ser bissexto ou não.
+        */ 
+
+        var num1 = parseFloat(prompt('Digite um número: '));
+        var op = prompt('Escolha uma operação aritmética (+, -, * ou /)');
+        
+        while((op != '+' ) && (op != '-') && (op != '*') && (op != '/')){
+			alert("Informe um operador aritmético");
+        var op = prompt('Escolha uma operação aritmética (+, -, * ou /)');
+        
+        }
+
+        var num2 = parseFloat(prompt('Digite outro número: '));
+        
+
+        var resultado;
+        
+        switch(op) {
+            case '+':
+                resultado = num1 + num2;
+            break;
+
+            case '-':
+                resultado = num1 - num2;
+            break;
+
+            case '*':
+                resultado = num1 * num2;
+            break;
+
+            case '/':
+                resultado = num1 / num2;
+            break;
+
+
+        }
+        
+        document.write('O resultado da operação é ' + resultado);
+
+        </script>
+
+    </head>
+
+    <body>
+    <h1></h1>
+    <p></p> 
+    </body>
+</html>

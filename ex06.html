@@ -1,0 +1,36 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <!-- Ajusta a acentuação -->
+        <meta charset="utf8" /> 
+        <title>Página-modelo HTML</title> 
+
+        <script type="text/javascript">
+
+        /*
+            Escreva um programa que encontre o primeiro 
+            número divísivel por 37 acima de 1000 e depois pare.
+        */ 
+
+        for(i = 1001; i < 1038; i++) {
+            if(i % 37 == 0) {
+              document.write('O primeiro número divísivel por 37 é: ' + i);
+              break; 
+            }
+        }
+
+        
+        document.write('<hr>');
+
+        for(var i = 1001; i % 37 != 0; i++);
+            document.write('O primeiro número divísivel por 37 é: ' + i);
+
+        </script>
+
+    </head>
+
+    <body>
+    <h1>Título da página</h1>
+    <p>Isto é um parágrafo.</p> 
+    </body>
+</html>

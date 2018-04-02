@@ -1,0 +1,32 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <!-- Ajusta a acentuação -->
+        <meta charset="utf8" /> 
+        <title>Página-modelo HTML</title> 
+
+        <script type="text/javascript">
+        
+        /*
+            Escreva um programa que conte regressivamente de 1000 a 0,
+            saltando os números múltiplos de 7 ou múltiplos de 11.        
+        */ 
+
+        for(i = 1000; i >= 0; --i) {
+            if(i % 7 == 0 || i % 11 == 0) {
+              continue;// passa à próxima iteração sem executar as linhas
+              //abaixo dele.
+            }
+            document.write(i + '<br>');
+        }
+        
+        
+        </script>
+
+    </head>
+
+    <body>
+    <h1>Título da página</h1>
+    <p>Isto é um parágrafo.</p> 
+    </body>
+</html>

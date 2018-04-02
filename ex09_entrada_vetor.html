@@ -1,0 +1,61 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <!-- Ajusta a acentuação -->
+        <meta charset="utf8" /> 
+        <title>Página-modelo HTML</title> 
+
+        <script type="text/javascript">
+
+        /*
+            Declare um vetor vazio. Dentro de um loop, peça ao usuario para
+            informar um número. A pergunta deve ser repetida até que o usuario
+            entre um número válido.
+
+            Insira o número informado no vetor previamente declarado, na posição
+            necessária para que os elementos do vetor mantenham a ordem crescente.
+
+            Após inserir um número, imprima os elementos do vetor em uma única linha,
+            separados por vírgulas.
+
+            O loop externo deve ser encerrado quando o usuario informar o número 0.
+        */ 
+
+        var vetor = [];
+        var aux;
+        
+        do {
+
+            do {
+                aux = parseInt(prompt('Informe um número: '));
+            } while(isNaN(aux));
+
+        // Procurando a posição correta para a inserção
+        for(var i = 0; i < vetor.length; i++) {
+            // Ou seja, só repetimos enquanto aux for maior
+            // que o número na posição atual do vetor
+            if(aux < vetor[i]) {
+                // 1) Insere aux na posição i do vetor
+                // 2) Cai fora do for
+            }
+        }    
+
+        } while(aux != 0);
+
+        
+
+
+        
+
+
+
+
+        </script>
+
+    </head>
+
+    <body>
+    <h1></h1>
+    <p></p> 
+    </body>
+</html>
